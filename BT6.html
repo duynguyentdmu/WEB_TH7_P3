@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bt6</title>
+	<script type="text/javascript" language="javascript">
+		function ChangeColor(color)
+		{
+			document.bgColor = color;
+		}
+	</script>
+</head>
+<body>
+	<form method="post">
+		<input type="radio" group="color1" value="Red" name="choose" onclick="ChangeColor(this.value)"/>Red<br>
+		<input type="radio" group="color1" value="Green" name="choose" onclick="ChangeColor(this.value)"/>Green<br>
+		<input type="radio" group="color1" value="Blue" name="choose" onclick="ChangeColor(this.value)"/>Blue<br>
+		<input type="radio" group="color1" value="Yellow" name="choose" onclick="ChangeColor(this.value)"/>Yellow<br>
+	</form>
+</body>
+</html>

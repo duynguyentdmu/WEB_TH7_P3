@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bt7</title>
+	<script type="text/javascript" language="javascript">
+		function Calculate(operator)
+		{
+			epx = document.caculator.x.value + operator + document.caculator.y.value;
+			rs = eval(epx);
+			document.caculator.kq.value = rs;
+		}
+	</script>
+</head>
+<body>
+	<form name="caculator" method="post">
+		<input type="text" name="x" width="10px">
+		<input type="button" value="+" onclick="Calculate(this.value)"/>
+		<input type="button" value="-" onclick="Calculate(this.value)"/>
+		<input type="button" value="*" onclick="Calculate(this.value)"/>
+		<input type="button" value="/" onclick="Calculate(this.value)"/>
+		<input type="text" name="y" width="10px" />=<input type="text" name="kq" width="10px"/>
+	</form>
+</body>
+</html>
